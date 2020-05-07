@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>DA106G2</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>contentType</param-name>
+		<param-value>text/html; charset=UTF-8</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>AndroidLiveServlet</servlet-name>
+		<servlet-class>android.com.live.controller.LiveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidLiveServlet</servlet-name>
+		<url-pattern>/Android/LiveServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidGetVideoServlet</servlet-name>
+		<servlet-class>android.com.live.controller.GetVideoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidGetVideoServlet</servlet-name>
+		<url-pattern>/Android/GetVideoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidMemberServlet</servlet-name>
+		<servlet-class>android.com.member.controller.MemberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidMemberServlet</servlet-name>
+		<url-pattern>/Android/MemberServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidDiaryServlet</servlet-name>
+		<servlet-class>android.com.diary.controller.DiaryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidDiaryServlet</servlet-name>
+		<url-pattern>/Android/DiaryServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidItemServlet</servlet-name>
+		<servlet-class>android.com.item.controller.ItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidItemServlet</servlet-name>
+		<url-pattern>/Android/ItemServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidOrdersServlet</servlet-name>
+		<servlet-class>android.com.orders.controller.OrdersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidOrdersServlet</servlet-name>
+		<url-pattern>/Android/OrdersServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidOrder_detailServlet</servlet-name>
+		<servlet-class>android.com.order_detail.controller.Order_detailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidOrder_detailServlet</servlet-name>
+		<url-pattern>/Android/Order_detailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidBookingServlet</servlet-name>
+		<servlet-class>android.com.booking.controller.BookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidBookingServlet</servlet-name>
+		<url-pattern>/Android/BookingServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidStaffServlet</servlet-name>
+		<servlet-class>android.com.staff.controller.StaffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidStaffServlet</servlet-name>
+		<url-pattern>/Android/StaffServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AndroidAuthorityServlet</servlet-name>
+		<servlet-class>android.com.authority.controller.AuthorityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidAuthorityServlet</servlet-name>
+		<url-pattern>/Android/AuthorityServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AndroidBookingDetialServlet</servlet-name>
+		<servlet-class>android.com.booking_detial.controller.BookingDetialServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AndroidBookingDetialServlet</servlet-name>
+		<url-pattern>/Android/BookingDetialServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
